@@ -34,7 +34,7 @@ limitations under the License.
 	    font-size:40px;
 	}
     </style>
-    <title>Cast Hello Text</title>
+    <title>AlarmCast</title>
   </head>
   <body>
 	<DIV id="message">Talk to me</DIV>
@@ -74,7 +74,7 @@ limitations under the License.
         // create a CastMessageBus to handle messages for a custom namespace
         window.messageBus =
           window.castReceiverManager.getCastMessageBus(
-              'urn:x-cast:com.alarmcast.alarmcast');
+              'urn:x-cast:com.alarmcast.cast');
 
         // handler for the CastMessageBus message event
         window.messageBus.onMessage = function(event) {
